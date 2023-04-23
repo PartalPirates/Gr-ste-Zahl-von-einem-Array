@@ -1,0 +1,28 @@
+#include <iostream>  
+using namespace std; 
+int main() 
+{
+    int Eingabewert[9] = {};  
+    for(int a = 0; a < 9; a++)  // Schleife zur Eingabe von 9 Zahlen
+    {
+        cout << "Geben Sie die Zahlen ein: "; 
+        cin >> Eingabewert[a]; 
+    }
+
+    int max = Eingabewert[0]; // Definition einer Variable mit dem Wert des ersten Array-Elements als Startwert
+    for(int a = 1; a < 9; a++) // Schleife zur Suche nach der größten Zahl
+    {
+        if(Eingabewert[a] > max) // Wenn das aktuelle Element größer als max ist
+        {
+            max = Eingabewert[a]; // Aktualisiere max mit dem Wert des aktuellen Elements
+        }
+    }
+    cout << "Die größte Zahl ist " << max << endl; // Ausgabe der größten Zahl
+
+    return 0; 
+}
+
+
+
+  return 0;
+}
